@@ -43,6 +43,10 @@ def cross_entropy(T, Y):
 print(cross_entropy(T, Y))
 
 
+# So, we had a problem defined as:
+# 2 clouds of points, one is centered at (2,2) the other at (-2,-2)
+# The exact Bayesian solution is w = [0,4,4] meaning the line of split would be 0 + 4x + 4y = 0. So, the line is y = -x (on the xy plane)
+# L2 regularization lecture video contains graphic explanation
 w = np.array([0, 4, 4])
 z = Xb.dot(w)  # output
 Y = sigmoid(z)  #
